@@ -1,0 +1,44 @@
+# What is HTTP ?
+   > "HTTP" stands for HYPER-TEXT TRANSFER PROTOCOL
+   >  It is a protocol used for transmitting data over the internet
+   >  it is a TCP/IP based protocol
+   >  HTTP is connectionless protocol : after making the request, the client disconnect from the server, then
+      connection again and deliver the response
+   >  The HTTP was designed mainly to fetch html documents and sends it to client
+   >  Versioning: HTTP has evolved over time, with multiple versions introduced to address various limitations and requirements.
+      The most common versions include HTTP/0.9, HTTP/1.0, HTTP/1.1, and HTTP/2. 
+      Each version introduces new features, optimizations, and improvements to enhance performance, security, and functionality.
+      HTTP/3, based on the QUIC protocol, is also emerging as a successor to HTTP/2, aiming to further improve efficiency and reliability,
+      particularly in mobile and high-latency environments.
+
+#  Difference between HTTP1.1 vs HTTP2 :
+
+   HTTP/1.1 :
+   > It was introduced in the year 1997, followed by the HTTP/1.
+   > HTTP/1.1 allows only one request-response exchange per TCP connection.
+   > HTTP/1.1 sends headers as plain text with each request and response, 
+     leading to increased bandwidth consumption, especially for large or repeated headers.
+   > HTTP/1.1 uses a plain text protocol.
+   > HTTP/1.1 requires clients to request each resource individually.
+
+
+    HTTP/2 :
+    > It was published in the year 2015, followed by the HTTP/1.1.
+    > HTTP/2 supports multiplexing, enabling multiple requests and responses to be sent concurrently over a single connection.
+      This reduces latency and improves overall efficiency.
+    > HTTP/2 introduces header compression, significantly reducing overhead by compressing HTTP headers.
+    > HTTP/2 utilizes a binary protocol for more efficient parsing and reduced complexity.
+      Although binary framing offers performance benefits,
+      it also makes debugging more challenging compared to HTTP/1.1's human-readable format.
+    > HTTP/2 supports server push, a feature allowing servers to push additional resources to the client's cache without waiting for explicit requests.
+      This can enhance page load times by preemptively delivering essential assets.
+
+
+#  Conclution :
+
+    In conclusion, the transition from HTTP/1.1 to HTTP/2 represents a significant advancement in web protocol technology,
+    offering several key improvements in performance, efficiency, and functionality.
+    HTTP/2 introduces multiplexing, header compression, binary protocol framing, server push, stream prioritization, and other features absent in HTTP/1.1.
+    These enhancements collectively reduce latency, minimize overhead, and improve resource utilization, resulting in faster and more reliable web browsing experiences.
+    While HTTP/2 adoption requires support from both clients and servers and may entail compatibility challenges during migration, its benefits outweigh these concerns,
+    making it the preferred choice for modern web applications aiming to deliver optimized performance and responsiveness.      

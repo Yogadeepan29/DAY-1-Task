@@ -1,0 +1,44 @@
+# Objects and its internal representation in Javascript :
+
+ > Objects are fundamental constructs that play a crucial role in data organization, manipulation, and interaction.
+ > They serve as the building blocks for structuring data and behavior in JavaScript applications, offering a powerful mechanism for encapsulation and abstraction.
+ 
+# What are Objects in JavaScript?
+   An object is a collection of properties, and a property is an association between a name (or key) and a value.
+   A property's value can be a function, in which case the property is known as a method.
+   Objects in JavaScript, just as in many other programming languages, can be compared to objects in real life.
+
+# Creating Objects in JavaScript:
+  > By object literal
+  > By creating instance of Object directly (using new keyword)
+
+# Internal Representation of Objects :
+
+  Internally, JavaScript engines use various techniques to represent objects efficiently.
+
+  > Dictionary-based Representation:
+     Objects in JavaScript are often implemented using dictionaries (or hash tables), where property names serve as keys, and property values are stored at corresponding hash table entries.
+     This allows for dynamic property addition, deletion, and lookup but can result in slower property access compared to more optimized representations.
+
+  > Hidden Classes (or Shapes):
+     Some JavaScript engines employ hidden classes or shapes to optimize property access. When an object is created, the engine assigns it a hidden class representing its structure.
+     Subsequent objects with the same structure share the same hidden class, allowing the engine to optimize property access by leveraging class-specific optimizations.
+
+  > Inline Caching: 
+     To further optimize property access, JavaScript engines use techniques like inline caching, where property access operations are optimized based on the object's hidden class.
+     Inline caching reduces the overhead of property lookups by caching property access paths and avoiding costly dictionary lookups whenever possible.
+
+  > Practical Use Cases of Objects
+     Objects are ubiquitous in JavaScript programming and find applications across various domains, including web development, data modeling, and application architecture. 
+     
+# Conclusion :
+   Objects are fundamental to JavaScript programming, serving as versatile constructs for organizing, manipulating, and representing data and behavior.
+   Understanding the internal representation of objects in JavaScript can help developers write more efficient code and leverage optimization techniques offered by JavaScript engines.
+   By mastering objects and their usage patterns, developers can unlock the full potential of JavaScript for building robust and scalable applications across various domains.
+   In summary, objects are the building blocks of JavaScript, empowering developers to create sophisticated software solutions that harness the full power of the language.
+   Whether you're building web applications, data-intensive systems, or client-side utilities, a solid understanding of objects and their internal representation is essential for mastering JavaScript development.
+
+
+
+
+
